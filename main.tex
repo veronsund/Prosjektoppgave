@@ -1,0 +1,164 @@
+\documentclass[b5paper, 11pt, norsk]{MScthesisITEM}
+
+% this package is just to generate text for demo-purposes
+\usepackage[norsk]{babel}
+%\usepackage{blindtext}
+\usepackage{parskip}
+
+
+\title{Awareness Communication and \newlinetitle Distribution Service for
+Hospitals} % The title of your assignement; NB use \newlinetitle to start a newline
+\author{Veronica Sund \\ \newlinetitle Monika Hafredal} % Your firstname and lastname
+\professor{Lill Kristiansen, ITEM} % Affiliation = ITEM for instance
+\supervisor{Joakim Klemets, ITEM}
+\date{Desember 2013}
+
+%% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
+% \let\subcaption\undefined
+% \let\subfloat\undefined
+% \usepackage[bf]{caption}
+% \usepackage{subcaption}
+
+\DeclareGraphicsExtensions{.pdf,.jpg}
+\graphicspath{{./figs/}}
+
+\loadglsentries{glossary}
+\makeglossaries
+
+\begin{document}
+\selectlanguage{norsk}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+%% Only for the project
+\titleITEM
+
+%% Only for the master's thesis; for the project report the description is taken from It's Learning and added by the department
+% \selectlanguage{english} % Change to 'norsk' if you are writing in Norwegian
+% \input{problem_description}
+% \cleardoublepage
+
+%% There must be an abstract in English, even though the main text is in Norwegian
+\selectlanguage{norsk}
+%\include{abstract_english}
+\cleardoublepage
+
+%% Only for the master's thesis; if the main text is in English and you can write Norwegian, there must be an abstract in Norwegian as well.A
+% \selectlanguage{norsk}
+% \include{abstract_norwegian}
+% \cleardoublepage
+
+%\selectlanguage{norsk}% Change to 'norsk' if you are writing in Norwegian
+%\include{abstract_english}
+
+%\include{preface}
+\cleardoublepage
+
+% similarly you may add a separate acknowledgments page
+
+\tableofcontents*
+\cleardoublepage
+
+%% include if relevant
+%\listoffigures
+\cleardoublepage
+
+%% include if relevant
+%\listoftables
+\cleardoublepage
+
+%% include if relevant
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+\cleardoublepage
+
+%% include if relevant
+%\printglossary[title=List of Symbols, style=long]
+\cleardoublepage
+%\glsaddall[]
+
+%% include if relevant
+%\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
+\cleardoublepage
+
+\pagenumbering{arabic}
+\pagestyle{ruled}
+%\include{example_chapter}
+\include{teori}
+\include{avbrytelser}
+\include{subsection}
+\include{awareness}
+%% include here the other chapters
+
+%\renewcommand*{\bibname}{References}
+%\bibliographystyle{alpha}
+%\bibliography{main}
+
+\begin{thebibliography}{99}
+
+\bibitem{Klemets13}
+  Klemets, J. and Kristiansen, L., 2013
+  \emph{Extended Communication Possibilities for Nurses: Taking Context into Consideration}.
+  IOS Press
+  
+\bibitem{Evjemo}
+Evjemo, T. E. and Klemets, J., 
+\emph{Maintaining Awareness: Nurses’ Handling of Interruptions in the Wireless Nurse Call System} Norwegian University of Science and Technology
+
+\bibitem{Bardram04}
+Bardram, J. E. and Hansen T. R., 2004
+\emph{The AWARE Architecture: Supporting Context-Mediated Social Awareness in Mobile Cooperation}
+
+\bibitem{KlemetsRedundancy}
+Klemets, J., Evjemo, T. E. and Kristiansen, L.
+\emph{Designing for redundancy: Nurses Experiences with the Wireless Nurse Call System}
+
+\bibitem{Dourish92}
+Dourish, P. and Bellotti, V., 1992
+\emph{Awareness and Coordination in Shared Workspaces}
+CSCW 92 Proceedings
+
+\bibitem{Heath02}
+Heath, D. et al., 2002
+\emph{Configuring Awareness}
+CSCW 11: 317-347. 2002
+
+\bibitem{Gutwin04}
+Gutwin, C., Penner, R., and Schneider, K., 2004
+\emph{Group Awareness in Distributed Software Development}
+CSCW`04, November 6-10, 2004 Chicago, Illinois, USA
+
+\bibitem{Scholl07}
+Scholl, J., Hasvold, P., Henriksen, E. and Ellingsen, G., 2007
+\emph {Managing communication availability and interruptions: a study of mobile communication in an oncology department.} In Proceedings of the 5th international conference on Pervasive computing(PERVASIVE'07), Anthony LaMarca, Marc Langheinrich, and Khai N. Truong (Eds.). Springer-Verlag, Berlin, Heidelberg, 234-250.
+
+\bibitem{McGillis10}
+McGillis Hall L, Pedersen C, Fairley L. 2010
+\emph {Losing the moment: understanding interruptions to nurses' work.}
+J Nurs Adm. 2010;40:169-176.
+
+\bibitem{Parker00}
+Parker J, Coiera E., 2000
+\emph {Improving clinical communication: a view from psychology.} 
+J Am Med Inform Assoc 2000;7:453–61.
+
+\bibitem{Grundgeiger09}
+Grundgeiger, T., Sanderson, P., 2009
+\emph {Interruptions in healthcare: Theoretical views}
+International Journal of Medical Informatics, Volume 78, Issue 5, May 2009, Pages 293–307.
+
+
+\end{thebibliography}
+
+%% Uncomment the following if you have any appendix
+% \appendix
+% \addtocontents{toc}{%
+%  \protect\vspace{1em}% 
+%  \protect\noindent \bfseries \appendixtocname\protect\par
+%  \protect\vspace{-.5em}%
+% }
+% \renewcommand{\chaptername}{\appendixname}
+%% include below possible appendices (chapters)
+
+
+\end{document} 
